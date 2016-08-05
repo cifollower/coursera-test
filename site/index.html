@@ -25,9 +25,96 @@
 				<div class="wrapper-col clearfix">
 					<section class="callmain">
 						<p>The last notes of site</p>
+						<form method="post" enctype="application/x-www-form-urlencoded | multipart/form-data | text/plain">
+							<p>
+								<label>Customer Name:
+									<input name="custname" required>
+								</label>
+							</p>
+							<p>
+								<label>Telephone Number:
+									<input type="tel" name="custtel">
+								</label>
+							</p>
+							<p>
+								<label>E-mail Address:
+									<input type="email" name="custemail" required>
+								</label>
+							</p>
+							<p>
+								<label>Order Type:
+									<select name="custtype" multiple>
+										<option value="Buisness">Buisness</option>
+										<option value="Customer">Customer</option>
+										<option value="Customer">Persone</option>
+									</select>
+								</label>
+							</p>
+							<fieldset>
+								<legend>Pizza Size</legend>
+							<p>
+								<label>
+									<input type="radio" name="size" value="small">Small
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="radio" name="size" value="medium">Medium
+								</label>
+							</p>
+							<p>	
+								<label>
+									<input type="radio" name="size" value="large">Large
+								</label>
+							</p>
+							</fieldset>
+							<fieldset>
+								<legend>Pizza Toppings</legend>
+							<p>
+								<label>
+									<input type="checkbox" name="toppings" value="cheese">Cheese
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox" name="toppings" value="bacon">Bacon
+								</label>
+							</p>
+							<p>	
+								<label>
+									<input type="checkbox" name="toppings" value="mushrooms">Mushrooms
+								</label>
+							</p>
+							<p>	
+								<label>
+									<input type="checkbox" name="toppings" value="onion">Onion
+								</label>
+							</p>
+							</fieldset>
+							<p>
+								<label>Preferred Delivery Time:
+									<input type=time min="10:00" max="23:59" step="900" name="delivery">
+								</label>
+							</p>
+							<p>
+								<label>Delivery Instructions:
+									<textarea name="comments" rows="10" cols="70"></textarea>
+								</label>
+							</p>
+							<p>
+								<button type="submit">Submit order</button>
+							</p>
+						</form>
 					</section>
 					<aside class="callsidebar">
-						<h4>Site sidebar</h4>
+						<div class="container-form">
+							<form action="form.php">
+								<input type="text" id="search-form" name="search" placeholder="Search">
+								<button>
+									<i class="fa fa-search"></i>
+								</button>
+							</form>
+						</div>
 						<p>This is your widgets</p>
 					</aside>
 				</div>

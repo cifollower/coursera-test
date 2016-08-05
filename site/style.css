@@ -83,14 +83,14 @@ body {
 
 .callsidebar {
 	width: 25%;
-	background: #eee;
+	background: #CCCCCC;
 	float: right;
 	padding: 20px 2.5%;
 }
 
 .wrapper-col {
 	width: 90%;
-	background: #333;
+	/*background: #333;*/
 	margin: auto;
 }
 #footer-site {
@@ -116,4 +116,19 @@ body {
 }
 .widget-social li a:hover {
 	color: #f05f40 !important;
+}
+
+#search-form{
+	width: 180px;
+	height: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ccc;
+	border-radius: 40px;
+	outline: none;
+	border: none;
+}
+.container-form button{
+	background-color: transparent;
+	border: none;
 }
